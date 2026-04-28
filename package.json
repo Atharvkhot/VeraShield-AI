@@ -1,0 +1,40 @@
+{
+  "name": "verashield-ai",
+  "version": "1.0.0",
+  "description": "VeraShield AI - Multi-modal Immunity Layer for Digital Truth and Student Safety",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "install-all": "npm install && npm run install-client"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "@google/generative-ai": "^0.21.0",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "ai",
+    "fake-news",
+    "deepfake",
+    "phishing",
+    "verification",
+    "safety"
+  ],
+  "author": "VeraShield AI Team",
+  "license": "MIT"
+}
